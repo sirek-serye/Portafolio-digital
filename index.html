@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio | Erick Reyes</title>
+    <meta name="description" content="Portafolio personal - proyectos, habilidades y contacto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Erick<span>Reyes</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre mí</a>
+          <a href="projects.html">Proyectos</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero container">
+        <div class="hero-text">
+          <h1>Hola, soy <span>Erick Reyes</span></h1>
+          <p>Desarrollador/a apasionado/a creando soluciones modernas y accesibles para la web.</p>
+          <div class="cta">
+            <a class="btn primary" href="projects.html">Ver proyectos</a>
+            <a class="btn ghost" href="contact.html">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="false">
+          <img class="hero-img" src="assets/home-hero.jpg" alt="Fondo de portada" onerror="this.style.display='none'" />
+          <canvas id="logoCanvas" width="512" height="512"></canvas>
+          <p class="muted small">Pon tu archivo en <code>assets/logo.png</code>.</p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>Lo más reciente</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-ecotips2.jpg" alt="Ecotips2" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Proyecto destacado</h3>
+              <p>Un vistazo rápido a uno de mis proyectos recientes. Mira más en la página de proyectos.</p>
+              <div class="project-actions">
+                <a class="btn small" href="projects.html">Ver más</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Erick Reyes. Todos los derechos reservados.</p>
+        <div class="socials">
+          <a class="social" href="https://github.com/sirek-serye" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

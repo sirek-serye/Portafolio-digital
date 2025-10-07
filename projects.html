@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyectos | Erick Reyes</title>
+    <meta name="description" content="Proyectos de Erick Reyes: demos, código y descripciones.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Erick<span>Reyes</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre mí</a>
+          <a href="projects.html" aria-current="page">Proyectos</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h1>Proyectos</h1>
+        <p class="muted">Una selección de trabajos recientes.</p>
+        <div class="projects-grid" style="margin-top:16px">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-ecotips2.jpg" alt="Ecotips2" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Ecotips2</h3>
+              <p>Proyecto en JavaScript con enfoque en consejos ecológicos.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Ecotips2" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-damas.jpg" alt="Damas" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Damas</h3>
+              <p>Juego de damas en JavaScript.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Damas" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-riesgos.jpg" alt="Formulario de riesgos" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Formulario de riesgos</h3>
+              <p>Aplicación en Python para registrar y gestionar riesgos.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Formulario-de-riesgos" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-sitio-cursor.jpg" alt="Sitio Cursor" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Sitio-Cursor</h3>
+              <p>Sitio web construido como práctica con HTML, CSS y JavaScript.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Sitio-Cursor" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-primer-sitio.jpg" alt="Primer sitio web" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Primer sitio web</h3>
+              <p>Proyecto inicial en HTML para afianzar conceptos de maquetación.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Primer-sitio-web" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/proj-vinculacion.jpg" alt="Vinculación entre ventanas" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-content">
+              <h3>Vinculación entre ventanas</h3>
+              <p>Ejercicio en Python con interacción entre ventanas.</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small ghost" href="https://github.com/sirek-serye/Vinculacion-entre-ventanas" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Erick Reyes. Todos los derechos reservados.</p>
+        <div class="socials">
+          <a class="social" href="https://github.com/sirek-serye" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

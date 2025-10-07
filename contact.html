@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | Erick Reyes</title>
+    <meta name="description" content="Contacta a Erick Reyes para colaboraciones o proyectos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Erick<span>Reyes</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre mí</a>
+          <a href="projects.html">Proyectos</a>
+          <a href="contact.html" aria-current="page">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h1>Contacto</h1>
+        <p class="muted">Envíame un mensaje y te responderé pronto.</p>
+        <form id="contact-form" class="contact-form" novalidate style="margin-top:16px">
+          <div class="grid two">
+            <label>
+              <span>Nombre</span>
+              <input name="name" type="text" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="tucorreo@email.com" required>
+            </label>
+          </div>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="message" rows="6" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Erick Reyes. Todos los derechos reservados.</p>
+        <div class="socials">
+          <a class="social" href="https://github.com/sirek-serye" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
